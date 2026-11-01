@@ -10,7 +10,6 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <!-- Netlify Identity Widget for Admin Login -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -473,16 +472,5 @@
 
   <!-- Script for Netlify Identity Redirection -->
   <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
-  <script src="script.js"></script>
 </body>
 </html>
